@@ -23,10 +23,10 @@ const Footer = () => {
           {[
             
             
-            { icon: <FaLinkedin className="hover:text-blue-500"/>, link: "www.linkedin.com/in/sadikashik02" },
+            { icon: <FaLinkedin className="hover:text-blue-500"/>, link: "https://www.linkedin.com/in/sadikashik02/" },
             { icon: <FaGithub />, link: "https://github.com/sadikashik2" },
             { icon: <FaFacebook className="hover:text-blue-500"/>, link: "https://www.facebook.com/sadik.ashik.3" },
-            { icon: <FaInstagram className="hover:text-pink-500"/>, link: "https://www.instagram.com/sadikashik16/" }
+            { icon: <FaInstagram className="transition-colors duration-300 ease-linear hover:text-pink-600"/>, link: "https://www.instagram.com/sadikashik16/" }
             
             
             
