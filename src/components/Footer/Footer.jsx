@@ -36,7 +36,7 @@ const Footer = () => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl  transition-transform transform hover:scale-110"
+              className="text-xl text-stone-300 transition-transform transform hover:scale-120"
             >
               {item.icon}
             </a>
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright Text */}
-        <p className="text-sm text-gray-400 mt-6">
+        <p className="text-sm text-stone-400 mt-6">
           © 2025 Sadik Ashik. All rights reserved.
         </p>
       </div>

@@ -36,7 +36,7 @@ const Navbar = () => {
     if (!section) return;
 
     if (sectionId === "about") {
-      const yOffset = -110; // navbar height
+      const yOffset = -120; // navbar height
       const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
       return;
@@ -63,7 +63,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div
-          className="text-lg font-bold cursor-pointer"
+          className="text-lg text-stone-300 font-bold cursor-pointer hover:text-white"
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
             setActiveSection("about");
@@ -76,7 +76,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-gray-300">
+        <ul className="hidden md:flex space-x-8 text-stone-300">
           {navItems.map((item) => (
             <li
               key={item.id}
@@ -94,13 +94,13 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4">
           <a
             href="https://github.com/sadikashik2"
-            className="text-gray-400 hover:text-white"
+            className="text-stone-400 hover:text-white"
           >
             <FaGithub size={24} />
           </a>
           <a
             href="https://www.linkedin.com/in/sadikashik02"
-            className="text-gray-400 hover:text-blue-400"
+            className="text-stone-400 hover:text-blue-500"
           >
             <FaLinkedin size={24} />
           </a>
@@ -125,7 +125,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
           />
 
-          <ul className="flex flex-col items-center justify-center space-y-6 mt-20 text-gray-300">
+          <ul className="flex flex-col items-center justify-center space-y-6 mt-20 text-stone-300">
             {navItems.map((item) => (
               <li
                 key={item.id}
@@ -141,13 +141,13 @@ const Navbar = () => {
             <div className="flex space-x-4 mt-4">
               <a
                 href="https://github.com/sadikashik2"
-                className="text-gray-300 hover:text-white"
+                className="text-stone-300 hover:text-white"
               >
                 <FaGithub size={24} />
               </a>
               <a
                 href="https://www.linkedin.com/in/sadikashik02"
-                className="text-gray-300 hover:text-white"
+                className="text-stone-300 hover:text-blue-500"
               >
                 <FaLinkedin size={24} />
               </a>
