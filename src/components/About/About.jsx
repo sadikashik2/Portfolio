@@ -1,5 +1,4 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
 import profileImage from "../../assets/profile.png";
 
 const About = () => {
@@ -45,24 +44,17 @@ const About = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="md:w-1/2 flex justify-center md:justify-end">
-         <Tilt
-  className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-[0_0_20px_5px_rgba(255,0,0,0.2)]"
-  tiltMaxAngleX={20}
-  tiltMaxAngleY={20}
-  perspective={900}
-  scale={1.07}
-  transitionSpeed={1500}
-  gyroscope={true}
->
-  <img
-    src={profileImage}
-    alt="Md Sadik Ashik"
-    className="w-full h-full object-cover"
-  />
-</Tilt>
+        {/* RIGHT SIDE */}
+<div className="md:w-1/2 flex justify-center md:justify-end">
+  <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-[0_0_20px_5px_rgba(255,0,0,0.2)]">
+    <img
+      src={profileImage}
+      alt="Md Sadik Ashik"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
 
-        </div>
       </div>
     </section>
   );
