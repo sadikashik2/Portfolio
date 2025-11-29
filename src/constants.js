@@ -21,9 +21,11 @@ import tgc_logo from "./assets/education_logo/tgc_logo.png";
 import tgbhs_logo from "./assets/education_logo/tgbhs_logo.png";
 
 // Project Section Logo's
+import aiCodeReview from "./assets/work_logo/aiCodeReview.png";
 import furniture from "./assets/work_logo/furniture.png";
 import todo from "./assets/work_logo/todoapp.png";
 import currency from "./assets/work_logo/currency.png";
+
 
 export const SkillsInfo = [
   {
@@ -94,7 +96,18 @@ export const education = [
 
 export const projects = [
   {
-    id: 0,
+  id: 0,
+  title: "AI Code Review Tool",
+  description:
+    "A web-based AI-powered code review and fixing tool built with React, Monaco Editor, and Tailwind CSS. It supports multiple programming languages (C, C++, JavaScript, Python, etc.) and provides AI-generated code review feedback. Users can automatically fix issues, highlight corrected lines, undo/reapply fixes, and work seamlessly on mobile with a responsive interface. The app uses Google Gemini 2.5 Flash API for smart code suggestions and corrections.",
+  image: aiCodeReview,
+  tags: ["React JS", "Tailwind CSS", "Monaco Editor", "Google Gemini API"],
+  github: "https://github.com/sadikashik2/AI-powered-code-reviewer",
+  webapp: "https://ai-powered-code-reviewer-alpha.vercel.app/",
+},
+
+  {
+    id: 1,
     title: "Furniture Landing Page",
     description:
       "This is a modern and responsive furniture landing page designed with a clean UI and smooth user experience. The page includes a fully functional shopping cart with add/remove items, quantity controls, and local storage to save the user’s selections. It also supports both dark and light themes for better usability. A testimonial slider built with Swiper.js adds interactivity and enhances the overall presentation of the site.",
@@ -104,7 +117,7 @@ export const projects = [
     webapp: "https://furniture-landing-page-zeta.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     title: "To-Do App",
     description:
       "This is a responsive and user-friendly To-Do App that helps users manage their daily tasks easily. It allows adding, editing, and deleting tasks, as well as marking them as complete or incomplete. All tasks are saved using browser local storage, ensuring the list stays intact even after refreshing or reopening the app.",
@@ -114,7 +127,7 @@ export const projects = [
     webapp: "https://sadikashik2.github.io/ToDo-app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Currency Converter",
     description:
       "A dynamic and responsive currency converter built with HTML, CSS, and JavaScript. This project allows users to convert amounts between currencies in real-time using a free API and displays the corresponding country flags. Features include responsive design, currency swap, input validation, and a live calculation of exchange rates.",
